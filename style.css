@@ -1,6 +1,25 @@
 *{
     box-sizing: border-box;
 }
+.logo img{
+    width:100px;
+    height:120px;
+
+
+}
+.logo{
+    display: flex;
+    text-align: center;
+    
+    background-color: rgb(184, 189, 200);
+    color:black;
+}
+nav{
+   
+    background-color:#222;
+    color:#ccc;
+    
+}
 
 
 
@@ -18,6 +37,7 @@
 }
 .pri-nav a{
     text-decoration: none;
+    color: #ccc;
 }
 .pri-nav a:hover, 
 .pri-nav a:focus-visible{
@@ -26,10 +46,11 @@
 }
 .logo,.logo:hover,.logo:focus-visible{
     text-align: center;
-    color:blueviolet;
+    color:rgb(23, 7, 39);
 
 }
 .slider{
+    margin-block-start: 20px;
     overflow: hidden;
 }
 .slider figure{
@@ -89,9 +110,33 @@
     gap:5px;
     grid-template-columns: 1fr 1fr;
     border:2px solid black;
-    margin-block-end: 5px;
-    background-color: bisque;
+    margin-block-end: 18px;
+    background-color: #f2f2f2;
     
+}
+.mess1{
+    margin-block-start: 10px;
+    text-align:center;
+    font-size: larger;
+    color: rgb(255, 0, 85);
+    border:1px solid black;
+    background-color:#f9f9f9;
+}
+.mess2{
+    margin-block-start: 20px;
+    border:1px solid black;
+    background-color:#eaf6ff ;
+
+}
+.mess2 h2{
+    margin-left: 30px;
+}
+.mess2 ul{
+    list-style-position: inside;
+    li::marker{
+        content: "👉";
+    }
+    color: blueviolet;
 }
 .sub-nam{
     display:flex;
@@ -99,7 +144,8 @@
 }
 footer{
     border:1px solid rgb(0, 0, 0);
-    background-color: rgb(133, 157, 205);
+    background-color:  #222;
+    color:#ccc;
 }
 .adm1{
     border:3px solid green;
@@ -107,7 +153,7 @@ footer{
     gap:5px;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 20px;
-    background-color: bisque;
+    background-color: violet;
     
 
 }
@@ -115,3 +161,14 @@ footer{
     width:200px;
     height:200px;
 }
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+.hover-effect:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
